@@ -375,7 +375,7 @@ function Index() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Solicitar orçamento de ${e.title} pelo WhatsApp`}
-                    className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 text-sm font-bold uppercase tracking-wide text-whatsapp-foreground transition-all duration-200 hover:brightness-105 hover:-translate-y-0.5"
+                    className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 text-sm font-bold uppercase tracking-wide text-whatsapp-foreground transition-all duration-200 hover:brightness-105 hover:-translate-y-0.5"
                   >
                     <MessageCircle size={18} />
                     Orçamento no WhatsApp

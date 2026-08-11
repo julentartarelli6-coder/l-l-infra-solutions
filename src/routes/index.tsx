@@ -107,24 +107,28 @@ const equipamentos = [
     cap: "30 lugares",
     desc: "Ideal para transporte diário de equipes entre alojamento e frente de trabalho.",
     img: heroBus,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Micro-ônibus (30 lugares) para transporte de equipes.",
   },
   {
     title: "Ônibus",
     cap: "48 lugares",
     desc: "Alta capacidade para grandes contingentes e traslados de longa distância.",
     img: fleetImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Ônibus (48 lugares) para traslado de equipes.",
   },
   {
     title: "Vans",
     cap: "15 lugares",
     desc: "Agilidade para equipes técnicas, supervisão e deslocamentos rápidos.",
     img: fleetImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Van (15 lugares) para equipe técnica.",
   },
   {
     title: "Caminhão Munck",
     cap: "Cesto aéreo NR12",
     desc: "Com controle de rádio frequência e cesto aéreo conforme NR12.",
     img: munckImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Caminhão Munck com cesto aéreo (NR12).",
   },
 ];
 

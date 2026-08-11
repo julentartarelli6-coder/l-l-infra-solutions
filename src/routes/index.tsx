@@ -107,24 +107,28 @@ const equipamentos = [
     cap: "30 lugares",
     desc: "Ideal para transporte diário de equipes entre alojamento e frente de trabalho.",
     img: heroBus,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Micro-ônibus (30 lugares) para transporte de equipes.",
   },
   {
     title: "Ônibus",
     cap: "48 lugares",
     desc: "Alta capacidade para grandes contingentes e traslados de longa distância.",
     img: fleetImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Ônibus (48 lugares) para traslado de equipes.",
   },
   {
     title: "Vans",
     cap: "15 lugares",
     desc: "Agilidade para equipes técnicas, supervisão e deslocamentos rápidos.",
     img: fleetImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Van (15 lugares) para equipe técnica.",
   },
   {
     title: "Caminhão Munck",
     cap: "Cesto aéreo NR12",
     desc: "Com controle de rádio frequência e cesto aéreo conforme NR12.",
     img: munckImg,
+    msg: "Olá! Gostaria de solicitar um orçamento de locação de Caminhão Munck com cesto aéreo (NR12).",
   },
 ];
 
@@ -337,8 +341,61 @@ function Index() {
         </div>
       </section>
 
+      {/* EQUIPAMENTOS */}
+      <section id="equipamentos" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
+        <Reveal>
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
+            Equipamentos disponíveis
+          </p>
+          <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
+            Frota pronta para <span className="text-gradient-brand">operar</span>
+          </h2>
+        </Reveal>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {equipamentos.map((e, i) => (
+            <Reveal key={e.title} delay={i * 100}>
+              <article className="card-cut flex h-full flex-col overflow-hidden border border-border bg-card transition-transform duration-300 hover:-translate-y-1">
+                <img
+                  src={e.img}
+                  alt={e.title}
+                  loading="lazy"
+                  width={1200}
+                  height={800}
+                  className="h-44 w-full object-cover"
+                />
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex items-center gap-2 text-primary">
+                    {e.title === "Caminhão Munck" ? <Truck size={18} /> : <Bus size={18} />}
+                    <span className="text-xs font-bold uppercase tracking-widest">{e.cap}</span>
+                  </div>
+                  <h3 className="mt-2 text-lg">{e.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{e.desc}</p>
+                  <a
+                    href={`${WHATSAPP}?text=${encodeURIComponent(e.msg)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Solicitar orçamento de ${e.title} pelo WhatsApp`}
+                    className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 text-sm font-bold uppercase tracking-wide text-whatsapp-foreground transition-all duration-200 hover:brightness-105 hover:-translate-y-0.5"
+                  >
+                    <MessageCircle size={18} />
+                    Orçamento no WhatsApp
+                  </a>
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={120}>
+          <p className="card-cut-alt mt-8 flex items-start gap-3 border border-primary/25 bg-accent p-6 text-sm font-semibold text-accent-foreground">
+            <ShieldCheck size={22} className="shrink-0 text-primary" />
+            Todos os equipamentos atendem às normativas e premissas de segurança, com laudos
+            técnicos, planos de manutenção e ART.
+          </p>
+        </Reveal>
+      </section>
+
       {/* VALORES */}
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
+      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 md:pb-28">
         <Reveal>
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
             Nossos valores
@@ -389,48 +446,6 @@ function Index() {
         </div>
       </section>
 
-      {/* EQUIPAMENTOS */}
-      <section id="equipamentos" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
-        <Reveal>
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
-            Equipamentos disponíveis
-          </p>
-          <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
-            Frota pronta para <span className="text-gradient-brand">operar</span>
-          </h2>
-        </Reveal>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {equipamentos.map((e, i) => (
-            <Reveal key={e.title} delay={i * 100}>
-              <article className="card-cut h-full overflow-hidden border border-border bg-card transition-transform duration-300 hover:-translate-y-1">
-                <img
-                  src={e.img}
-                  alt={e.title}
-                  loading="lazy"
-                  width={1200}
-                  height={800}
-                  className="h-44 w-full object-cover"
-                />
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-primary">
-                    {e.title === "Caminhão Munck" ? <Truck size={18} /> : <Bus size={18} />}
-                    <span className="text-xs font-bold uppercase tracking-widest">{e.cap}</span>
-                  </div>
-                  <h3 className="mt-2 text-lg">{e.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{e.desc}</p>
-                </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-        <Reveal delay={120}>
-          <p className="card-cut-alt mt-8 flex items-start gap-3 border border-primary/25 bg-accent p-6 text-sm font-semibold text-accent-foreground">
-            <ShieldCheck size={22} className="shrink-0 text-primary" />
-            Todos os equipamentos atendem às normativas e premissas de segurança, com laudos
-            técnicos, planos de manutenção e ART.
-          </p>
-        </Reveal>
-      </section>
 
       {/* ÁREAS DE ATUAÇÃO */}
       <section id="atuacao" className="bg-secondary py-20 md:py-28">
@@ -600,7 +615,7 @@ function Index() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="bg-brand fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full text-primary-foreground shadow-[var(--shadow-glow)] transition-transform duration-200 hover:scale-110"
+        className="fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg transition-transform duration-200 hover:scale-110"
       >
         <MessageCircle size={26} />
       </a>

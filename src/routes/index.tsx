@@ -615,7 +615,7 @@ function Index() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="bg-brand fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full text-primary-foreground shadow-[var(--shadow-glow)] transition-transform duration-200 hover:scale-110"
+        className="fixed right-5 bottom-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg transition-transform duration-200 hover:scale-110"
       >
         <MessageCircle size={26} />
       </a>

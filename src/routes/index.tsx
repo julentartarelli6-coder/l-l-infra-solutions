@@ -148,12 +148,22 @@ function Index() {
     const email = String(data.get("email") ?? "").trim();
     const mensagem = String(data.get("mensagem") ?? "").trim();
 
-    if (!nome || nome.length > 100) return toast.error("Informe um nome válido.");
-    if (!telefone || telefone.length > 30) return toast.error("Informe um telefone válido.");
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 255)
-      return toast.error("Informe um e-mail válido.");
-    if (!mensagem || mensagem.length > 1000)
-      return toast.error("Escreva uma mensagem de até 1000 caracteres.");
+    if (!nome || nome.length > 100) {
+      toast.error("Informe um nome válido.");
+      return;
+    }
+    if (!telefone || telefone.length > 30) {
+      toast.error("Informe um telefone válido.");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 255) {
+      toast.error("Informe um e-mail válido.");
+      return;
+    }
+    if (!mensagem || mensagem.length > 1000) {
+      toast.error("Escreva uma mensagem de até 1000 caracteres.");
+      return;
+    }
 
     setSending(true);
     const texto = `Olá, sou ${nome}. Telefone: ${telefone}. E-mail: ${email}. ${mensagem}`;

@@ -49,6 +49,8 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP = "https://wa.me/5549991091289";
+const WHATSAPP_MSG = "Olá! Vim pelo site da L&L Rental e gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = `${WHATSAPP}?text=${encodeURIComponent(WHATSAPP_MSG)}`;
 
 const valores = [
   {

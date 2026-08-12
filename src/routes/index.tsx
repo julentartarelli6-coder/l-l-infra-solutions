@@ -49,6 +49,8 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP = "https://wa.me/5549991091289";
+const WHATSAPP_MSG = "Olá! Vim pelo site da L&L Rental e gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = `${WHATSAPP}?text=${encodeURIComponent(WHATSAPP_MSG)}`;
 
 const valores = [
   {
@@ -250,7 +252,7 @@ function Index() {
                 Solicitar orçamento <ArrowRight size={18} />
               </a>
               <a
-                href={WHATSAPP}
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/35 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-graphite-foreground transition-colors hover:bg-graphite-foreground/10"
@@ -611,7 +613,7 @@ function Index() {
 
       {/* WhatsApp flutuante */}
       <a
-        href={WHATSAPP}
+        href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"

@@ -21,7 +21,7 @@ import {
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Reveal } from "@/components/Reveal";
-import { Logo } from "@/components/logolenon.png";
+import { Logo } from "@/components/Logo";
 import heroBus from "@/assets/hero-bus.jpg";
 import fleetImg from "@/assets/fleet.jpg";
 import munckImg from "@/assets/munck.jpg";

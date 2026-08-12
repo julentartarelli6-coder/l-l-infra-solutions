@@ -252,7 +252,7 @@ function Index() {
                 Solicitar orçamento <ArrowRight size={18} />
               </a>
               <a
-                href={WHATSAPP}
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/35 px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-graphite-foreground transition-colors hover:bg-graphite-foreground/10"

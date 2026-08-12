@@ -613,7 +613,7 @@ function Index() {
 
       {/* WhatsApp flutuante */}
       <a
-        href={WHATSAPP}
+        href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"

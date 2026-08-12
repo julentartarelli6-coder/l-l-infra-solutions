@@ -29,13 +29,13 @@ import munckImg from "@/assets/munck.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L&L Rental | Locação de Veículos para Grandes Obras" },
+      { title: "L&L Rental" },
       {
         name: "description",
         content:
           "L&L Rental: locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
-      { property: "og:title", content: "L&L Rental | Compromisso com os Resultados" },
+      { property: "og:title", content: "L&L Rental" },
       {
         property: "og:description",
         content:

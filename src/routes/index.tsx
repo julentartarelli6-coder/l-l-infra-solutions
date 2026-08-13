@@ -364,14 +364,7 @@ function Index() {
           {equipamentos.map((e, i) => (
             <Reveal key={e.title} delay={i * 100}>
               <article className="card-cut flex h-full flex-col overflow-hidden border border-border bg-card transition-transform duration-300 hover:-translate-y-1">
-                <img
-                  src={e.img}
-                  alt={e.title}
-                  loading="lazy"
-                  width={1200}
-                  height={800}
-                  className="h-44 w-full object-cover"
-                />
+                <CardCarousel images={e.imgs} alt={e.title} />
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-2 text-primary">
                     {e.title === "Caminhão Munck" ? <Truck size={18} /> : <Bus size={18} />}

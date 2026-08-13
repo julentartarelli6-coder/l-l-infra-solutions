@@ -467,7 +467,7 @@ function Index() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
               Áreas de atuação
             </p>
-            <p className="mt-4 max-w-2xl text-base leading-snug text-graphite-foreground sm:text-lg">
+            <p className="mt-4 max-w-2xl text-base leading-snug text-black sm:text-lg">
               A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo agilidade, segurança e conforto em cada operação.
             </p>
           </Reveal>

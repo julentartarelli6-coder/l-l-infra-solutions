@@ -30,12 +30,12 @@ import munckImg from "@/assets/munck.jpeg";
 import van from "@/assets/van.png";
 import micro from "@/assets/micro.png";
 import onibus from "@/assets/onibus.png";
-import vanExterna from "@/assets/van-externa.png.asset.json";
-import vanInterna from "@/assets/van-interna.jpeg.asset.json";
-import microExterno from "@/assets/micro-externo.png.asset.json";
-import microInterno from "@/assets/micro-interno.jpeg.asset.json";
-import onibusExterno from "@/assets/onibus-externo.png.asset.json";
-import onibusInterno from "@/assets/onibus-interno.jpeg.asset.json";
+import vanExterna from "@/assets/vanlado.png";
+import vanInterna from "@/assets/vandentro.jpeg";
+import microExterno from "@/assets/microlado.png";
+import microInterno from "@/assets/microdentro.jpeg";
+import onibusExterno from "@/assets/onibuslado.png";
+import onibusInterno from "@/assets/onibusdentro.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

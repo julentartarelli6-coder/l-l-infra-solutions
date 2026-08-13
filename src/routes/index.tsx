@@ -22,12 +22,16 @@ import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Reveal } from "@/components/Reveal";
 import { Logo } from "@/components/Logo";
+import { CardCarousel } from "@/components/CardCarousel";
 import heroBus from "@/assets/hero-bus.jpg";
 import fleetImg from "@/assets/logo.png";
 import munckImg from "@/assets/munck.jpeg";
-import van from "@/assets/van.png";
-import micro from "@/assets/micro.png";
-import onibus from "@/assets/onibus.png";
+import vanExterna from "@/assets/van-externa.png.asset.json";
+import vanInterna from "@/assets/van-interna.jpeg.asset.json";
+import microExterno from "@/assets/micro-externo.png.asset.json";
+import microInterno from "@/assets/micro-interno.jpeg.asset.json";
+import onibusExterno from "@/assets/onibus-externo.png.asset.json";
+import onibusInterno from "@/assets/onibus-interno.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({

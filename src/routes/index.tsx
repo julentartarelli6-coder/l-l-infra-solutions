@@ -44,13 +44,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "L&L Rental: locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
+          "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
       { property: "og:title", content: "L&L Rental" },
       {
         property: "og:description",
         content:
-          "Frota moderna e equipe técnica qualificada para transporte de equipes em grandes obras de infraestrutura.",
+          "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

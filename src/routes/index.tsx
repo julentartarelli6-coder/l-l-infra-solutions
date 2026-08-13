@@ -22,12 +22,16 @@ import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { Reveal } from "@/components/Reveal";
 import { Logo } from "@/components/Logo";
+import { CardCarousel } from "@/components/CardCarousel";
 import heroBus from "@/assets/hero-bus.jpg";
 import fleetImg from "@/assets/logo.png";
 import munckImg from "@/assets/munck.jpeg";
-import van from "@/assets/van.png";
-import micro from "@/assets/micro.png";
-import onibus from "@/assets/onibus.png";
+import vanExterna from "@/assets/van-externa.png.asset.json";
+import vanInterna from "@/assets/van-interna.jpeg.asset.json";
+import microExterno from "@/assets/micro-externo.png.asset.json";
+import microInterno from "@/assets/micro-interno.jpeg.asset.json";
+import onibusExterno from "@/assets/onibus-externo.png.asset.json";
+import onibusInterno from "@/assets/onibus-interno.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -111,28 +115,28 @@ const equipamentos = [
     title: "Caminhão Munck",
     cap: "Cesto aéreo NR12",
     desc: "Com controle de rádio frequência e cesto aéreo conforme NR12.",
-    img: munckImg,
+    imgs: [munckImg],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Caminhão Munck com cesto aéreo (NR12).",
   },
   {
     title: "Vans",
     cap: "15 lugares",
     desc: "Agilidade para equipes técnicas, supervisão e deslocamentos rápidos.",
-    img: van,
+    imgs: [vanExterna.url, vanInterna.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Van (15 lugares) para equipe técnica.",
   },
   {
     title: "Micro-ônibus",
     cap: "30 lugares",
     desc: "Ideal para transporte diário de equipes entre alojamento e frente de trabalho.",
-    img: micro,
+    imgs: [microExterno.url, microInterno.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Micro-ônibus (30 lugares) para transporte de equipes.",
   },
   {
     title: "Ônibus",
     cap: "48 lugares",
     desc: "Alta capacidade para grandes contingentes e traslados de longa distância.",
-    img: onibus,
+    imgs: [onibusExterno.url, onibusInterno.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Ônibus (48 lugares) para traslado de equipes.",
   },
 ];
@@ -360,14 +364,7 @@ function Index() {
           {equipamentos.map((e, i) => (
             <Reveal key={e.title} delay={i * 100}>
               <article className="card-cut flex h-full flex-col overflow-hidden border border-border bg-card transition-transform duration-300 hover:-translate-y-1">
-                <img
-                  src={e.img}
-                  alt={e.title}
-                  loading="lazy"
-                  width={1200}
-                  height={800}
-                  className="h-44 w-full object-cover"
-                />
+                <CardCarousel images={e.imgs} alt={e.title} />
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-center gap-2 text-primary">
                     {e.title === "Caminhão Munck" ? <Truck size={18} /> : <Bus size={18} />}

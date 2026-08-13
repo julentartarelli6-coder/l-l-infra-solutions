@@ -23,8 +23,11 @@ import { Toaster } from "@/components/ui/sonner";
 import { Reveal } from "@/components/Reveal";
 import { Logo } from "@/components/Logo";
 import heroBus from "@/assets/hero-bus.jpg";
-import fleetImg from "@/assets/fleet.jpg";
-import munckImg from "@/assets/munck.jpg";
+import fleetImg from "@/assets/logo.png";
+import munckImg from "@/assets/munck.jpeg";
+import van from "@/assets/van.png";
+import micro from "@/assets/micro.png";
+import onibus from "@/assets/onibus.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,21 +111,21 @@ const equipamentos = [
     title: "Micro-ônibus",
     cap: "30 lugares",
     desc: "Ideal para transporte diário de equipes entre alojamento e frente de trabalho.",
-    img: heroBus,
+    img: micro,
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Micro-ônibus (30 lugares) para transporte de equipes.",
   },
   {
     title: "Ônibus",
     cap: "48 lugares",
     desc: "Alta capacidade para grandes contingentes e traslados de longa distância.",
-    img: fleetImg,
+    img: onibus,
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Ônibus (48 lugares) para traslado de equipes.",
   },
   {
     title: "Vans",
     cap: "15 lugares",
     desc: "Agilidade para equipes técnicas, supervisão e deslocamentos rápidos.",
-    img: fleetImg,
+    img: van,
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Van (15 lugares) para equipe técnica.",
   },
   {

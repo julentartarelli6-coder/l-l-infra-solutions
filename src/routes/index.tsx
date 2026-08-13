@@ -149,7 +149,7 @@ const areas = [
   { icon: HardHat, title: "Obras e frentes de trabalho" },
   { icon: Users, title: "Eventos e logística de passageiros" },
   { icon: RouteIcon, title: "Traslados e viagens programadas" },
-  { icon: CalendarClock, title: "Frota: vans, micro-ônibus e ônibus" },
+  { icon: CalendarClock, title: "FROTA : CAMINHÃO MUNCK, VANS, MICRO-ÔNIBUS E ÔNIBUS" },
 ];
 
 function Index() {

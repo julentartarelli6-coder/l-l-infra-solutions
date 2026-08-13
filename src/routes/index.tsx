@@ -26,6 +26,9 @@ import { CardCarousel } from "@/components/CardCarousel";
 import heroBus from "@/assets/hero-bus.jpg";
 import fleetImg from "@/assets/logo.png";
 import munckImg from "@/assets/munck.jpeg";
+import van from "@/assets/van.png";
+import micro from "@/assets/micro.png";
+import onibus from "@/assets/onibus.png";
 import vanExterna from "@/assets/van-externa.png.asset.json";
 import vanInterna from "@/assets/van-interna.jpeg.asset.json";
 import microExterno from "@/assets/micro-externo.png.asset.json";
@@ -122,21 +125,21 @@ const equipamentos = [
     title: "Vans",
     cap: "15 lugares",
     desc: "Agilidade para equipes técnicas, supervisão e deslocamentos rápidos.",
-    imgs: [vanExterna.url, vanInterna.url],
+    imgs: [van, vanExterna.url, vanInterna.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Van (15 lugares) para equipe técnica.",
   },
   {
     title: "Micro-ônibus",
     cap: "30 lugares",
     desc: "Ideal para transporte diário de equipes entre alojamento e frente de trabalho.",
-    imgs: [microExterno.url, microInterno.url],
+    imgs: [micro, microExterno.url, microInterno.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Micro-ônibus (30 lugares) para transporte de equipes.",
   },
   {
     title: "Ônibus",
     cap: "48 lugares",
     desc: "Alta capacidade para grandes contingentes e traslados de longa distância.",
-    imgs: [onibusExterno.url, onibusInterno.url],
+    imgs: [onibus, onibusExterno.url, onibusInterno.url],
     msg: "Olá! Gostaria de solicitar um orçamento de locação de Ônibus (48 lugares) para traslado de equipes.",
   },
 ];

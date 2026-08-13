@@ -497,8 +497,7 @@ function Index() {
                 Vamos falar sobre a sua obra
               </h2>
               <p className="mt-5 max-w-md text-graphite-foreground/75">
-                Solicite um orçamento e receba a melhor solução de transporte para suas
-                equipes.
+                Solicite um orçamento e receba a melhor solução em locação de equipamentos e transporte corporativo para suas obras.
               </p>
               <ul className="mt-8 space-y-4">
                 <li className="flex items-center gap-3 text-graphite-foreground">

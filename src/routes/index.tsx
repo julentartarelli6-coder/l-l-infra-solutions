@@ -66,27 +66,27 @@ const valores = [
   {
     icon: ShieldCheck,
     title: "Integridade e Sinceridade",
-    desc: "Relações transparentes e compromissos que se cumprem.",
+    desc: "Agir com transparência e ética em todas as situações, mantendo a confiança de nossos clientes e parceiros;",
   },
   {
     icon: Handshake,
     title: "Respeito ao Cliente",
-    desc: "Atendimento próximo, ágil e orientado à necessidade da obra.",
+    desc: "Valorizar e considerar as opiniões e sentimentos dos nossos clientes, estabelecendo relacionamentos de confiança e parceria;",
   },
   {
     icon: Scale,
     title: "Justiça e Equidade",
-    desc: "Condições claras e tratamento justo com clientes e equipes.",
+    desc: "Tratar todos os clientes de forma justa e imparcial, garantindo um atendimento igualitário e respeitoso;",
   },
   {
     icon: TrendingUp,
     title: "Melhoria Contínua",
-    desc: "Processos e frota em constante evolução e renovação.",
+    desc: "Buscar sempre a evolução, oferecendo soluções que atendam aos mais altos padrões de qualidade e que entreguem resultados 4 excepcionais;",
   },
   {
     icon: HardHat,
     title: "Segurança e Conformidade",
-    desc: "Normas técnicas, laudos e manutenção preventiva sempre em dia.",
+    desc: "Cumprir rigorosamente as normativas e métodos de segurança do trabalho, garantindo a integridade de nossos colaboradores e a segurança em todas as operações.",
   },
 ];
 
@@ -94,22 +94,22 @@ const ofertas = [
   {
     n: "01",
     title: "Equipamentos Modernos e Diversificados",
-    desc: "Frota revisada e diversificada para atender diferentes portes de operação.",
+    desc: "Oferecemos uma ampla gama de equipamentos de alta performance, sempre atualizados para atender às necessidades específicas de cada projeto.",
   },
   {
     n: "02",
     title: "Logística Eficiente",
-    desc: "Planejamento de rotas e disponibilidade que respeitam o cronograma da obra.",
+    desc: "Garantimos um atendimento ágil e pontual em todo o território nacional, com soluções logísticas que atendem às exigências de grandes obras.",
   },
   {
     n: "03",
     title: "Equipe Técnica Qualificada",
-    desc: "Motoristas e operadores treinados, com suporte técnico especializado.",
+    desc: "Contamos com profissionais altamente capacitados, prontos para fornecer suporte técnico especializado diretamente no campo, assegurando a eficiência das operações.",
   },
   {
     n: "04",
     title: "Experiência em Grandes Obras",
-    desc: "Atuação consolidada em energia, terraplenagem e infraestrutura pesada.",
+    desc: "Temos vasta experiência em projetos de grande porte, com alto desempenho operacional, sempre focados em resultados que superam as expectativas dos nossos clientes.",
   },
 ];
 
@@ -149,7 +149,7 @@ const areas = [
   { icon: HardHat, title: "Obras e frentes de trabalho" },
   { icon: Users, title: "Eventos e logística de passageiros" },
   { icon: RouteIcon, title: "Traslados e viagens programadas" },
-  { icon: CalendarClock, title: "Frota: vans, micro-ônibus e ônibus" },
+  { icon: CalendarClock, title: "FROTA : CAMINHÃO MUNCK, VANS, MICRO-ÔNIBUS E ÔNIBUS" },
 ];
 
 function Index() {
@@ -238,8 +238,8 @@ function Index() {
         <div className="absolute inset-0 bg-[linear-gradient(100deg,var(--graphite)_18%,color-mix(in_oklab,var(--primary-deep)_88%,transparent)_58%,transparent_100%)]" />
         <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-24 sm:px-6 md:py-36 lg:py-44">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-graphite-foreground">
-              Locação de veículos para grandes obras
+            <span className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-graphite-foreground text-center">
+              LOCAÇÃO DE EQUIPAMENTOS E VEICULO PARA TRANSPORTE EM GRANDES OBRAS
             </span>
           </Reveal>
           <Reveal delay={120}>
@@ -249,8 +249,7 @@ function Index() {
           </Reveal>
           <Reveal delay={220}>
             <p className="mt-6 max-w-xl text-base text-graphite-foreground/80 sm:text-lg">
-              Transporte de passageiros com segurança, pontualidade e frota moderna para
-              subestações, transmissão de energia, terraplenagem e rodovias.
+              Locação de equipamentos e veículos pra transporte de passageiros em obras de infra estrutura de subestação de energia, linhas de transmissão, terraplenagens, rodovias e construção civil em geral.
             </p>
           </Reveal>
           <Reveal delay={320}>
@@ -284,15 +283,20 @@ function Index() {
             <h2 className="mt-4 text-3xl leading-tight sm:text-5xl">
               L&amp;L Engenharia e <span className="text-gradient-brand">Rental LTDA</span>
             </h2>
-            <p className="mt-6 text-muted-foreground">
-              Fundada em 2020 pelos irmãos Lênon e Leonardo, a L&amp;L nasceu com foco em
-              inovação, eficiência e qualidade na locação de equipamentos para grandes obras.
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              Atuamos em setores estratégicos: subestações e transmissão de energia elétrica,
-              terraplenagem, rodovias e infraestrutura pesada — sempre com destaque em
-              segurança, cumprimento de prazos e satisfação do cliente.
-            </p>
+            <div className="mt-6 text-muted-foreground space-y-4">
+              <p>
+                A L&L Engenharia e Rental LTDA foi fundada em 2020 pelos irmãos Lênon e Leonardo, com o propósito de trazer inovação, eficiência e qualidade ao mercado de locação de equipamentos para grandes obras.
+              </p>
+              <p>
+                Nossa atuação se concentra em setores estratégicos, como subestações e transmissão de energia elétrica, terraplenagem, rodovias e projetos de infraestrutura pesada.
+              </p>
+              <p>
+                Comprometidos com a excelência, nos dedicamos a entregar soluções completas e garantir a máxima comodidade para nossos parceiros, sempre com foco na segurança, no cumprimento de prazos e na satisfação dos nossos clientes.
+              </p>
+              <p>
+                A L&L Engenharia e Rental se destaca por ser uma empresa que entende as necessidades do setor e oferece suporte de alta qualidade para projetos de grande porte.
+              </p>
+            </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Fundada em 2020", "Gestão familiar e próxima", "Cumprimento de prazos", "Segurança em primeiro lugar"].map(
                 (item) => (
@@ -327,13 +331,17 @@ function Index() {
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">
                 Missão
               </p>
-              <h3 className="mt-4 text-2xl text-graphite-foreground sm:text-3xl">
-                Soluções confiáveis e de alta qualidade
+              <h3 className="mt-4 text-2xl text-graphite-foreground sm:text-3xl uppercase">
+                FORNECER SOLUÇÕES CONFIÁVEIS E DE ALTA QUALIDADE NA LOCAÇÃO DE EQUIPAMENTOS
               </h3>
-              <p className="mt-4 text-graphite-foreground/75">
-                Fornecer soluções confiáveis e de alta qualidade na locação de equipamentos,
-                com agilidade, segurança e suporte técnico especializado.
-              </p>
+              <div className="mt-4 text-graphite-foreground/75 space-y-2">
+                <p>
+                  Priorizando agilidade, segurança e um suporte técnico especializado.
+                </p>
+                <p>
+                  Buscamos contribuir para o sucesso dos projetos de nossos clientes, sempre com foco no desenvolvimento sustentável e no atendimento das demandas mais exigentes do mercado.
+                </p>
+              </div>
             </div>
           </Reveal>
           <Reveal delay={150}>
@@ -345,8 +353,7 @@ function Index() {
                 Referência nacional no setor
               </h3>
               <p className="mt-4 text-graphite-foreground/75">
-                Ser referência nacional em locação de equipamentos para obras de
-                infraestrutura.
+                Temos como visão nos tornar uma referência nacional em locação de equipamentos para obras de infraestrutura, sendo reconhecidos pela excelência dos serviços prestados, pela constante inovação e pelo compromisso com os resultados de nossos clientes.
               </p>
             </div>
           </Reveal>
@@ -460,7 +467,7 @@ function Index() {
               Áreas de atuação
             </p>
             <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
-              Onde a L&amp;L <span className="text-gradient-brand">atende</span>
+              <span className="text-gradient-brand">Áreas de atuação</span>
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -490,8 +497,7 @@ function Index() {
                 Vamos falar sobre a sua obra
               </h2>
               <p className="mt-5 max-w-md text-graphite-foreground/75">
-                Solicite um orçamento e receba a melhor solução de transporte para suas
-                equipes.
+                Solicite um orçamento e receba a melhor solução em locação de equipamentos e transporte corporativo para suas obras.
               </p>
               <ul className="mt-8 space-y-4">
                 <li className="flex items-center gap-3 text-graphite-foreground">
@@ -510,7 +516,7 @@ function Index() {
                     <span className="bg-brand inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary-foreground">
                       <Phone size={18} />
                     </span>
-                    <span className="font-semibold">(49) 9109-1289</span>
+                    <span className="font-semibold">(49) 99109-1289</span>
                   </a>
                 </li>
                 <li>

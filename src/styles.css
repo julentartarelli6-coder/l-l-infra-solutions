@@ -178,6 +178,18 @@ a[href*="lovable.dev?utm"],
   background-image: var(--gradient-brand);
 }
 
+@utility bg-brand-line {
+  background-image: linear-gradient(to right, var(--primary-light), transparent);
+}
+
+@utility bg-brand-line-reverse {
+  background-image: linear-gradient(to right, transparent, var(--primary-deep));
+}
+
+@utility clip-diag-accent {
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+
 /* Asymmetric "cut" corner card */
 @utility card-cut {
   border-radius: 1.25rem 1.25rem 1.25rem 0;

@@ -464,12 +464,22 @@ function Index() {
       <section id="atuacao" className="bg-secondary py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
-            <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
-              Áreas de atuação
-            </p>
-            <p className="mt-4 max-w-2xl text-base leading-snug text-black sm:text-lg">
-              A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo agilidade, segurança e conforto em cada operação.
-            </p>
+            <div className="relative max-w-3xl">
+              <div className="absolute -top-6 -left-6 h-24 w-24 bg-primary/20 -z-10 clip-diag-accent" />
+              <div className="border-l-4 border-primary py-2 pl-6 sm:pl-8">
+                <span className="font-display block text-sm font-bold uppercase tracking-[0.25em] text-primary">
+                  Áreas de atuação
+                </span>
+                <p className="mt-4 max-w-2xl text-base leading-snug text-black sm:text-lg">
+                  A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo <span className="font-display border-b-2 border-primary/40 font-bold italic text-primary">agilidade, segurança e conforto</span> em cada operação.
+                </p>
+                <div className="mt-8 flex items-center gap-4">
+                  <div className="bg-brand-line h-0.5 w-12" />
+                  <div className="h-3 w-3 rotate-45 border border-primary" />
+                </div>
+              </div>
+              <div className="bg-brand-line-reverse absolute -bottom-4 -right-4 h-1 w-32" />
+            </div>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {areas.map((a, i) => (

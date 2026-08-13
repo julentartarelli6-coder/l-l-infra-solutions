@@ -283,15 +283,20 @@ function Index() {
             <h2 className="mt-4 text-3xl leading-tight sm:text-5xl">
               L&amp;L Engenharia e <span className="text-gradient-brand">Rental LTDA</span>
             </h2>
-            <p className="mt-6 text-muted-foreground">
-              Fundada em 2020 pelos irmãos Lênon e Leonardo, a L&amp;L nasceu com foco em
-              inovação, eficiência e qualidade na locação de equipamentos para grandes obras.
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              Atuamos em setores estratégicos: subestações e transmissão de energia elétrica,
-              terraplenagem, rodovias e infraestrutura pesada — sempre com destaque em
-              segurança, cumprimento de prazos e satisfação do cliente.
-            </p>
+            <div className="mt-6 text-muted-foreground space-y-4">
+              <p>
+                A L&L Engenharia e Rental LTDA foi fundada em 2020 pelos irmãos Lênon e Leonardo, com o propósito de trazer inovação, eficiência e qualidade ao mercado de locação de equipamentos para grandes obras.
+              </p>
+              <p>
+                Nossa atuação se concentra em setores estratégicos, como subestações e transmissão de energia elétrica, terraplenagem, rodovias e projetos de infraestrutura pesada.
+              </p>
+              <p>
+                Comprometidos com a excelência, nos dedicamos a entregar soluções completas e garantir a máxima comodidade para nossos parceiros, sempre com foco na segurança, no cumprimento de prazos e na satisfação dos nossos clientes.
+              </p>
+              <p>
+                A L&L Engenharia e Rental se destaca por ser uma empresa que entende as necessidades do setor e oferece suporte de alta qualidade para projetos de grande porte.
+              </p>
+            </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {["Fundada em 2020", "Gestão familiar e próxima", "Cumprimento de prazos", "Segurança em primeiro lugar"].map(
                 (item) => (

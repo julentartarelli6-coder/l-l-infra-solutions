@@ -238,8 +238,8 @@ function Index() {
         <div className="absolute inset-0 bg-[linear-gradient(100deg,var(--graphite)_18%,color-mix(in_oklab,var(--primary-deep)_88%,transparent)_58%,transparent_100%)]" />
         <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-24 sm:px-6 md:py-36 lg:py-44">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-graphite-foreground">
-              Locação de veículos para grandes obras
+            <span className="inline-flex items-center gap-2 rounded-full border border-graphite-foreground/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-graphite-foreground text-center">
+              LOCAÇÃO DE EQUIPAMENTOS E VEICULO PARA TRANSPORTE EM GRANDES OBRAS
             </span>
           </Reveal>
           <Reveal delay={120}>

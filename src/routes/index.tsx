@@ -3,6 +3,7 @@ import { useState, type FormEvent } from "react";
 import {
   Phone,
   Mail,
+  MapPin,
   MessageCircle,
   ShieldCheck,
   Handshake,

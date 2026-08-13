@@ -516,7 +516,7 @@ function Index() {
                     <span className="bg-brand inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary-foreground">
                       <Phone size={18} />
                     </span>
-                    <span className="font-semibold">(49) 9109-1289</span>
+                    <span className="font-semibold">(49) 99109-1289</span>
                   </a>
                 </li>
                 <li>

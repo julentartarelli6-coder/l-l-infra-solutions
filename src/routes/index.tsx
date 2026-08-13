@@ -467,9 +467,9 @@ function Index() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
               Áreas de atuação
             </p>
-            <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
-              <span className="text-gradient-brand">Áreas de atuação</span>
-            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-snug text-graphite-foreground sm:text-lg">
+              A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo agilidade, segurança e conforto em cada operação.
+            </p>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {areas.map((a, i) => (

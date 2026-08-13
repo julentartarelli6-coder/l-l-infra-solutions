@@ -531,6 +531,15 @@ function Index() {
                     <span className="font-semibold break-all">casanovaeng49@gmail.com</span>
                   </a>
                 </li>
+                <li className="flex items-start gap-3 text-graphite-foreground">
+                  <span className="bg-brand inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary-foreground">
+                    <MapPin size={18} />
+                  </span>
+                  <div className="text-sm leading-snug">
+                    <p><strong>Matriz:</strong> Rua Danilo Lucatel, nº 52, Bairro Jardim Alvorada, São Carlos/SC, CEP 89885-000</p>
+                    <p className="mt-1"><strong>Filial:</strong> Av. Paissandu, n° 776, zona 3, Maringá/PR, CEP 87050-130</p>
+                  </div>
+                </li>
               </ul>
             </Reveal>
 

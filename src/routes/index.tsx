@@ -3,6 +3,7 @@ import { useState, type FormEvent } from "react";
 import {
   Phone,
   Mail,
+  MapPin,
   MessageCircle,
   ShieldCheck,
   Handshake,
@@ -466,9 +467,9 @@ function Index() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">
               Áreas de atuação
             </p>
-            <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
-              <span className="text-gradient-brand">Áreas de atuação</span>
-            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-snug text-graphite-foreground sm:text-lg">
+              A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo agilidade, segurança e conforto em cada operação.
+            </p>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {areas.map((a, i) => (
@@ -529,6 +530,15 @@ function Index() {
                     </span>
                     <span className="font-semibold break-all">casanovaeng49@gmail.com</span>
                   </a>
+                </li>
+                <li className="flex items-start gap-3 text-graphite-foreground">
+                  <span className="bg-brand inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-primary-foreground">
+                    <MapPin size={18} />
+                  </span>
+                  <div className="text-sm leading-snug">
+                    <p><strong>Matriz:</strong> Rua Danilo Lucatel, nº 52, Bairro Jardim Alvorada, São Carlos/SC, CEP 89885-000</p>
+                    <p className="mt-1"><strong>Filial:</strong> Av. Paissandu, n° 776, zona 3, Maringá/PR, CEP 87050-130</p>
+                  </div>
                 </li>
               </ul>
             </Reveal>

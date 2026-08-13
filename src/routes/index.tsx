@@ -66,27 +66,27 @@ const valores = [
   {
     icon: ShieldCheck,
     title: "Integridade e Sinceridade",
-    desc: "Relações transparentes e compromissos que se cumprem.",
+    desc: "Agir com transparência e ética em todas as situações, mantendo a confiança de nossos clientes e parceiros;",
   },
   {
     icon: Handshake,
     title: "Respeito ao Cliente",
-    desc: "Atendimento próximo, ágil e orientado à necessidade da obra.",
+    desc: "Valorizar e considerar as opiniões e sentimentos dos nossos clientes, estabelecendo relacionamentos de confiança e parceria;",
   },
   {
     icon: Scale,
     title: "Justiça e Equidade",
-    desc: "Condições claras e tratamento justo com clientes e equipes.",
+    desc: "Tratar todos os clientes de forma justa e imparcial, garantindo um atendimento igualitário e respeitoso;",
   },
   {
     icon: TrendingUp,
     title: "Melhoria Contínua",
-    desc: "Processos e frota em constante evolução e renovação.",
+    desc: "Buscar sempre a evolução, oferecendo soluções que atendam aos mais altos padrões de qualidade e que entreguem resultados 4 excepcionais;",
   },
   {
     icon: HardHat,
     title: "Segurança e Conformidade",
-    desc: "Normas técnicas, laudos e manutenção preventiva sempre em dia.",
+    desc: "Cumprir rigorosamente as normativas e métodos de segurança do trabalho, garantindo a integridade de nossos colaboradores e a segurança em todas as operações.",
   },
 ];
 
@@ -94,22 +94,22 @@ const ofertas = [
   {
     n: "01",
     title: "Equipamentos Modernos e Diversificados",
-    desc: "Frota revisada e diversificada para atender diferentes portes de operação.",
+    desc: "Oferecemos uma ampla gama de equipamentos de alta performance, sempre atualizados para atender às necessidades específicas de cada projeto.",
   },
   {
     n: "02",
     title: "Logística Eficiente",
-    desc: "Planejamento de rotas e disponibilidade que respeitam o cronograma da obra.",
+    desc: "Garantimos um atendimento ágil e pontual em todo o território nacional, com soluções logísticas que atendem às exigências de grandes obras.",
   },
   {
     n: "03",
     title: "Equipe Técnica Qualificada",
-    desc: "Motoristas e operadores treinados, com suporte técnico especializado.",
+    desc: "Contamos com profissionais altamente capacitados, prontos para fornecer suporte técnico especializado diretamente no campo, assegurando a eficiência das operações.",
   },
   {
     n: "04",
     title: "Experiência em Grandes Obras",
-    desc: "Atuação consolidada em energia, terraplenagem e infraestrutura pesada.",
+    desc: "Temos vasta experiência em projetos de grande porte, com alto desempenho operacional, sempre focados em resultados que superam as expectativas dos nossos clientes.",
   },
 ];
 

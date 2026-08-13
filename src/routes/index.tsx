@@ -249,8 +249,7 @@ function Index() {
           </Reveal>
           <Reveal delay={220}>
             <p className="mt-6 max-w-xl text-base text-graphite-foreground/80 sm:text-lg">
-              Transporte de passageiros com segurança, pontualidade e frota moderna para
-              subestações, transmissão de energia, terraplenagem e rodovias.
+              Locação de equipamentos e veículos pra transporte de passageiros em obras de infra estrutura de subestação de energia, linhas de transmissão, terraplenagens, rodovias e construção civil em geral.
             </p>
           </Reveal>
           <Reveal delay={320}>

@@ -475,7 +475,6 @@ function Index() {
                 </p>
                 <div className="mt-8 flex items-center gap-4">
                   <div className="bg-brand-line h-0.5 w-12" />
-                  <div className="h-3 w-3 rotate-45 border border-primary" />
                 </div>
               </div>
               <div className="bg-brand-line-reverse absolute -bottom-4 -right-4 h-1 w-32" />

@@ -467,7 +467,7 @@ function Index() {
               Áreas de atuação
             </p>
             <h2 className="mt-4 max-w-2xl text-3xl sm:text-5xl">
-              Onde a L&amp;L <span className="text-gradient-brand">atende</span>
+              <span className="text-gradient-brand">Áreas de atuação</span>
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

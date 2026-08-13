@@ -331,13 +331,17 @@ function Index() {
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">
                 Missão
               </p>
-              <h3 className="mt-4 text-2xl text-graphite-foreground sm:text-3xl">
-                Soluções confiáveis e de alta qualidade
+              <h3 className="mt-4 text-2xl text-graphite-foreground sm:text-3xl uppercase">
+                FORNECER SOLUÇÕES CONFIÁVEIS E DE ALTA QUALIDADE NA LOCAÇÃO DE EQUIPAMENTOS
               </h3>
-              <p className="mt-4 text-graphite-foreground/75">
-                Fornecer soluções confiáveis e de alta qualidade na locação de equipamentos,
-                com agilidade, segurança e suporte técnico especializado.
-              </p>
+              <div className="mt-4 text-graphite-foreground/75 space-y-2">
+                <p>
+                  Priorizando agilidade, segurança e um suporte técnico especializado.
+                </p>
+                <p>
+                  Buscamos contribuir para o sucesso dos projetos de nossos clientes, sempre com foco no desenvolvimento sustentável e no atendimento das demandas mais exigentes do mercado.
+                </p>
+              </div>
             </div>
           </Reveal>
           <Reveal delay={150}>
@@ -349,8 +353,7 @@ function Index() {
                 Referência nacional no setor
               </h3>
               <p className="mt-4 text-graphite-foreground/75">
-                Ser referência nacional em locação de equipamentos para obras de
-                infraestrutura.
+                Temos como visão nos tornar uma referência nacional em locação de equipamentos para obras de infraestrutura, sendo reconhecidos pela excelência dos serviços prestados, pela constante inovação e pelo compromisso com os resultados de nossos clientes.
               </p>
             </div>
           </Reveal>

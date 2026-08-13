@@ -28,7 +28,7 @@ export function CardCarousel({ images, alt }: { images: string[]; alt: string })
             type="button"
             onClick={() => go(-1)}
             aria-label={`Foto anterior de ${alt}`}
-            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-graphite/60 p-1.5 text-graphite-foreground opacity-0 transition-opacity duration-200 hover:bg-graphite/80 focus-visible:opacity-100 group-hover:opacity-100"
+            className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-graphite/70 p-1.5 text-graphite-foreground opacity-100 shadow-sm transition-opacity duration-200 hover:bg-graphite/80 focus-visible:opacity-100 md:opacity-0 md:group-hover:opacity-100"
           >
             <ChevronLeft size={18} />
           </button>
@@ -36,7 +36,7 @@ export function CardCarousel({ images, alt }: { images: string[]; alt: string })
             type="button"
             onClick={() => go(1)}
             aria-label={`Próxima foto de ${alt}`}
-            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-graphite/60 p-1.5 text-graphite-foreground opacity-0 transition-opacity duration-200 hover:bg-graphite/80 focus-visible:opacity-100 group-hover:opacity-100"
+            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-graphite/70 p-1.5 text-graphite-foreground opacity-100 shadow-sm transition-opacity duration-200 hover:bg-graphite/80 focus-visible:opacity-100 md:opacity-0 md:group-hover:opacity-100"
           >
             <ChevronRight size={18} />
           </button>

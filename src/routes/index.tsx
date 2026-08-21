@@ -40,22 +40,58 @@ import onibusInterno from "@/assets/onibusdentro.jpeg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L&L Rental" },
+      { title: "L&L Rental — Locação de Veículos para Grandes Obras" },
       {
         name: "description",
         content:
           "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
-      { property: "og:title", content: "L&L Rental" },
+      { property: "og:title", content: "L&L Rental — Locação de Veículos para Grandes Obras" },
       {
         property: "og:description",
         content:
           "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ll-rental-solutions.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://ll-rental-solutions.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "L&L Engenharia e Rental LTDA",
+          alternateName: "L&L Rental",
+          url: "https://ll-rental-solutions.lovable.app/",
+          telephone: "+55 49 99109-1289",
+          description:
+            "Locação de equipamentos e veículos para transporte de passageiros em obras de infraestrutura, subestações, linhas de transmissão, terraplenagem e rodovias.",
+          address: [
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Rua Danilo Lucatel, 52, Jardim Alvorada",
+              addressLocality: "São Carlos",
+              addressRegion: "SC",
+              postalCode: "89885-000",
+              addressCountry: "BR",
+            },
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Av. Paissandu, 776, Zona 3",
+              addressLocality: "Maringá",
+              addressRegion: "PR",
+              postalCode: "87050-130",
+              addressCountry: "BR",
+            },
+          ],
+        }),
+      },
+    ],
   }),
+
   component: Index,
 });
 

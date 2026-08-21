@@ -281,7 +281,7 @@ function Index() {
           </Reveal>
           <Reveal delay={120}>
             <h1 className="mt-6 max-w-3xl text-4xl leading-[0.95] text-graphite-foreground sm:text-6xl lg:text-7xl">
-              Compromisso com os resultados!
+              Locação de vans, ônibus e munck para grandes obras
             </h1>
           </Reveal>
           <Reveal delay={220}>
@@ -503,9 +503,10 @@ function Index() {
             <div className="relative max-w-3xl">
               <div className="absolute -top-6 -left-6 h-24 w-24 bg-primary/20 -z-10 clip-diag-accent" />
               <div className="border-l-4 border-primary py-2 pl-6 sm:pl-8">
-                <span className="font-display block text-sm font-bold uppercase tracking-[0.25em] text-primary">
+                <h2 className="font-display block text-sm font-bold uppercase tracking-[0.25em] text-primary">
                   Áreas de atuação
-                </span>
+                </h2>
+
                 <p className="mt-4 max-w-2xl text-base leading-snug text-black sm:text-lg">
                   A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo <span className="font-display border-b-2 border-primary/40 font-bold italic text-primary">agilidade, segurança e conforto</span> em cada operação.
                 </p>

@@ -40,17 +40,17 @@ import onibusInterno from "@/assets/onibusdentro.jpeg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L&L Rental — Locação de Veículos para Grandes Obras" },
+      { title: "L&L Rental — Locação de Veículos" },
       {
         name: "description",
         content:
-          "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
+          "Locação de vans, micro-ônibus, ônibus e caminhão munck para obras .",
       },
-      { property: "og:title", content: "L&L Rental — Locação de Veículos para Grandes Obras" },
+      { property: "og:title", content: "L&L Rental — Locação de Veículos" },
       {
         property: "og:description",
         content:
-          "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
+          "Locação de vans, micro-ônibus, ônibus e caminhão munck para obras .",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://ll-rental-solutions.lovable.app/" },

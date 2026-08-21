@@ -40,22 +40,58 @@ import onibusInterno from "@/assets/onibusdentro.jpeg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L&L Rental" },
+      { title: "L&L Rental — Locação de Veículos para Grandes Obras" },
       {
         name: "description",
         content:
           "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
-      { property: "og:title", content: "L&L Rental" },
+      { property: "og:title", content: "L&L Rental — Locação de Veículos para Grandes Obras" },
       {
         property: "og:description",
         content:
           "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ll-rental-solutions.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://ll-rental-solutions.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "L&L Engenharia e Rental LTDA",
+          alternateName: "L&L Rental",
+          url: "https://ll-rental-solutions.lovable.app/",
+          telephone: "+55 49 99109-1289",
+          description:
+            "Locação de equipamentos e veículos para transporte de passageiros em obras de infraestrutura, subestações, linhas de transmissão, terraplenagem e rodovias.",
+          address: [
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Rua Danilo Lucatel, 52, Jardim Alvorada",
+              addressLocality: "São Carlos",
+              addressRegion: "SC",
+              postalCode: "89885-000",
+              addressCountry: "BR",
+            },
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Av. Paissandu, 776, Zona 3",
+              addressLocality: "Maringá",
+              addressRegion: "PR",
+              postalCode: "87050-130",
+              addressCountry: "BR",
+            },
+          ],
+        }),
+      },
+    ],
   }),
+
   component: Index,
 });
 
@@ -245,7 +281,7 @@ function Index() {
           </Reveal>
           <Reveal delay={120}>
             <h1 className="mt-6 max-w-3xl text-4xl leading-[0.95] text-graphite-foreground sm:text-6xl lg:text-7xl">
-              Compromisso com os resultados!
+              Locação de vans, ônibus e munck para grandes obras
             </h1>
           </Reveal>
           <Reveal delay={220}>
@@ -467,9 +503,10 @@ function Index() {
             <div className="relative max-w-3xl">
               <div className="absolute -top-6 -left-6 h-24 w-24 bg-primary/20 -z-10 clip-diag-accent" />
               <div className="border-l-4 border-primary py-2 pl-6 sm:pl-8">
-                <span className="font-display block text-sm font-bold uppercase tracking-[0.25em] text-primary">
+                <h2 className="font-display block text-sm font-bold uppercase tracking-[0.25em] text-primary">
                   Áreas de atuação
-                </span>
+                </h2>
+
                 <p className="mt-4 max-w-2xl text-base leading-snug text-black sm:text-lg">
                   A L&L Rental é especializada em locação de equipamentos e veículos pra transporte de passageiros em obras e empreendimentos, oferecendo <span className="font-display border-b-2 border-primary/40 font-bold italic text-primary">agilidade, segurança e conforto</span> em cada operação.
                 </p>

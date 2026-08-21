@@ -77,12 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "L&L Rental" },
-      { name: "description", content: "Locação de vans, micro-ônibus, ônibus e caminhão munck para transporte de passageiros em obras de infraestrutura, subestações e rodovias." },
       { name: "author", content: "L&L Engenharia e Rental LTDA" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:site_name", content: "L&L Rental" },
     ],
+
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
